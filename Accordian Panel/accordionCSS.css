@@ -78,7 +78,7 @@ article {
 }
 
 .accordion .panel div img{
-    width: 15%;
+    width: auto;
     height: 30%;
 }
 

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa|Abel');
+
+html {
+  line-height: 1.2;
+  font-size: 17px;
+  font-family: 'Abel', sans-serif;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+article {
+    margin: 20px 35px 0 35px;
+  }
+
+.accordion {
+	margin: 20px;
+}
+
+.accordion .panel {
+	border: 1px solid #444;
+	margin: -1px 0 0 0;
+    
+
+}
+
+.accordion .panel label {
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	position: relative;
+	padding: 10px 20px 10px 34px;
+}
+
+.accordion .panel label::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #666;
+}
+
+.accordion .panel > div {
+    display: none;
+}
+
+.accordion .panel input:checked ~ label{
+    color: #f15d5d;
+}
+
+.accordion .panel input:checked ~ label::before{
+    transform: rotate(90deg);
+}
+
+.accordion .panel input:checked ~ div {
+    padding:10px 20px 10px 20px;
+    display: block;
+}
+
+.accordion .panel input{
+    display: none;
+}
+
